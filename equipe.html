@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Equipe Médica | Ethera Health</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#a5c8ff",
+                        "primary-fixed-dim": "#a5c8ff",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#677881",
+                        "outline-variant": "#c1c6d4",
+                        "on-primary-fixed-variant": "#004786",
+                        "primary": "#005dac",
+                        "on-primary-container": "#fffdff",
+                        "primary-container": "#1976d2",
+                        "surface-tint": "#005faf",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary": "#4f5f68",
+                        "error": "#ba1a1a",
+                        "outline": "#717783",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#d3e2ed",
+                        "inverse-on-surface": "#eff1f3",
+                        "primary-fixed": "#d4e3ff",
+                        "surface-bright": "#f7f9fb",
+                        "secondary-fixed": "#d6e5ef",
+                        "on-tertiary-container": "#fefeff",
+                        "on-secondary-container": "#56656e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "error-container": "#ffdad6",
+                        "on-background": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#bac9d3",
+                        "on-tertiary-fixed-variant": "#394951",
+                        "inverse-surface": "#2d3133",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed-dim": "#b8c9d3",
+                        "surface-dim": "#d8dadc",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#0f1d25",
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#001c3a",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3b4951",
+                        "on-surface-variant": "#414752",
+                        "on-tertiary-fixed": "#0d1e25",
+                        "secondary": "#526069",
+                        "surface-container": "#eceef0",
+                        "on-surface": "#191c1e",
+                        "tertiary-fixed": "#d4e5ef"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #005dac 0%, #1976d2 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-sky-800 dark:text-white font-headline">
+                Ethera Health
+            </div>
+<nav class="hidden md:flex items-center gap-8 font-['Manrope'] tracking-tight font-semibold">
+<a class="text-sky-700 border-b-2 border-sky-700 pb-1 font-headline font-semibold tracking-tight transition-colors duration-300" href="index.html">Início</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="sobre.html">Sobre</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="equipe.html">Equipe</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="servicos.html">Serviços</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="">Blog</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="contato.html">Contato</a>
+</nav>
+<button class="bg-primary-container text-white px-6 py-2.5 rounded-xl font-headline font-bold text-sm scale-102 transition-transform duration-300 hover:shadow-lg">
+                Agende sua Consulta
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-20">
+<div class="relative overflow-hidden rounded-3xl p-16 hero-gradient flex items-center min-h-[400px]">
+<div class="relative z-10 max-w-2xl">
+<span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold uppercase tracking-widest mb-6">Nossos Especialistas</span>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-white leading-tight mb-6 tracking-tight">Equipe de Especialistas</h1>
+<p class="text-on-primary-container/90 text-lg leading-relaxed font-light max-w-xl">
+                        Conheça o corpo clínico da Ethera Health. Unimos excelência acadêmica, tecnologia de ponta e um olhar humanizado para o seu cuidado integral.
+                    </p>
+</div>
+<!-- Decorative Abstract Element -->
+<div class="absolute right-0 top-0 h-full w-1/2 opacity-20 hidden lg:block">
+<svg class="w-full h-full" viewbox="0 0 400 400">
+<defs>
+<lineargradient id="grad1" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:white;stop-opacity:0.3"></stop>
+<stop offset="100%" style="stop-color:white;stop-opacity:0"></stop>
+</lineargradient>
+</defs>
+<circle cx="250" cy="200" fill="url(#grad1)" r="150"></circle>
+<circle cx="300" cy="100" fill="url(#grad1)" r="80"></circle>
+</svg>
+</div>
+</div>
+</section>
+<!-- Team Grid Section -->
+<section class="px-12 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Doctor Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col group transition-all duration-500 hover:-translate-y-2">
+<div class="relative h-96 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="portrait of professional female doctor smiling in clinic environment, bright clean natural lighting, high-end medical photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRCbD_KBS4eObevkWhY45gopDrTZWO1-__zlGKNYENCehAIIkpbksyDQVK6dQuISdfHvEw_8L-OLI2SrLTB8ldfav3hlrT-qFildVhM0cS89z_EbiLzZSb7FgY3GsgXA2zWgSA766nlkthIeLajNA-73opZAI9raq7AX9Vyrcji3SXtsEfYFszXDTzYFxj2b6lPl4i7s9DxFeCFDWRSTXWLo1uZXI7WhwBzbCnG-FSNNbZ-ni3y6Lyg1i7Q6Bkt02wiLkEfgF2vaPo"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-lg px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider">
+                            CRM-SP 123456
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-1">Dra. Ana Silva</h3>
+<p class="text-primary font-semibold text-sm uppercase tracking-wide mb-6">Dermatologista</p>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">school</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Doutorado pela USP e Especialização em Medicina Estética Avançada.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">workspace_premium</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Foco em tratamentos minimamente invasivos e oncologia cutânea.</p>
+</div>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<button class="w-full py-3 bg-surface-container-high rounded-xl text-primary font-bold text-sm transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-2">
+                                Ver Currículo Completo
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Doctor Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col group transition-all duration-500 hover:-translate-y-2">
+<div class="relative h-96 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="portrait of confident male physician in professional attire, soft studio lighting, clean background, medical executive look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVvgv1JNVOh_eP9UyIaDKnXtGiHY_EqP5JDDEp_p9NrnJHcVLgzzbI0SiR9l62hv_1wXGmNWwTwGGGQaaUK0QO_myilXVoheS7aYqIzSgi8bpO6Higpg1J2TLMXnohCOjHC5AOfqKyZ2YYvVN4H8wUhDM6g_iKXhcgppLRknDDnWHbHIfUl9pdZECY-S7xJbOOis8tz-GPNGao8deM0aM6Rt1h23Azlsdy2bFyRYKdJN0Va_OwB_Er1quOh7HLTbI_zsBXoHAhRaw8"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-lg px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider">
+                            CRM-SP 789012
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-1">Dr. Marcos Oliveira</h3>
+<p class="text-primary font-semibold text-sm uppercase tracking-wide mb-6">Cardiologista</p>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">school</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Formação pelo InCor e Fellowship em Cardiologia Intervencionista em Boston.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">workspace_premium</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Especialista em prevenção de doenças coronárias e arritmias.</p>
+</div>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<button class="w-full py-3 bg-surface-container-high rounded-xl text-primary font-bold text-sm transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-2">
+                                Ver Currículo Completo
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Doctor Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col group transition-all duration-500 hover:-translate-y-2">
+<div class="relative h-96 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="female medical specialist looking professional and approachable, bright modern clinic setting, elegant physician headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDna_5TZjK9diLLDEZ0WWlQ7yuEctTDxiKLVLIkpAvYlfX88iC3DlrTn935MdTDJZILWi9RAjqZDl1KUmbQHnLyoW-3BGITnVrrVm_sqsZDdqSiOBZ-uHkWmCwv9sRBhIBC1dBIaQ5WxPs6Hr-xpI_KYbrB97LkD_MyQyQKqFI8MiSGxxN5ieRLGUswtyxDvzid6aDLI8yaujlRgmISF3JKzZwma9oDTqIkmxG0pGadMmPH78Z_cFLuQ14j_MTPopfky3dyRlSofQ6_"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-lg px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider">
+                            CRM-SP 345678
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-1">Dra. Beatriz Santos</h3>
+<p class="text-primary font-semibold text-sm uppercase tracking-wide mb-6">Ginecologista</p>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">school</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Especialista em Saúde da Mulher pela Unifesp e Medicina Fetal.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">workspace_premium</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Referência em reposição hormonal e ginecologia regenerativa.</p>
+</div>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<button class="w-full py-3 bg-surface-container-high rounded-xl text-primary font-bold text-sm transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-2">
+                                Ver Currículo Completo
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Doctor Card 4 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col group transition-all duration-500 hover:-translate-y-2">
+<div class="relative h-96 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="smiling male doctor with stethoscope, soft medical office lighting, empathetic and professional vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgXqikmpjyD_BfhlVyOvRHtyCEHFhdZqJzlbTn5PgW8OUCV9NY7K6u6uYUVJT1R5OSCA6WYDop_NWhQEYKKgr6KyX-mF6hgoM7ccoiWamCSnS-CGyzXOr9zpqG1nHeHLzl_Zatt11El00mJnUZ4ik_AEZ4gFAT0ufrtJQAe_KpEk_8Ndie1DLV0eDRg2Zq3eFyQhwNsvdEY17sVzeoYEpeRBTDTsi87YWkuQjCdkOMu-KMGMe1bm8VsxxrhftbU_zXRPYMjLJVceu6"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-lg px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider">
+                            CRM-SP 901234
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-1">Dr. Ricardo Lemos</h3>
+<p class="text-primary font-semibold text-sm uppercase tracking-wide mb-6">Pediatra</p>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">school</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Mestrado em Saúde da Criança e do Adolescente pela Santa Casa de SP.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">workspace_premium</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Especialista em desenvolvimento infantil e aleitamento materno.</p>
+</div>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<button class="w-full py-3 bg-surface-container-high rounded-xl text-primary font-bold text-sm transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-2">
+                                Ver Currículo Completo
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Doctor Card 5 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col group transition-all duration-500 hover:-translate-y-2">
+<div class="relative h-96 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="female specialist in lab coat, professional healthcare portrait with soft clinical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ8V2coTd5CCFlCbrCPREVLhVjTSIa9g-yn2EtTbXqzUftdvu3s6VIKZRZbc6jLZz3YmATPy_F_By7hBWxm3chziI3jf2wYDLgXmJZhFZq6fzsa6m6wZG99uar4CUS2Z3CaMMjcMFy--mfDdfqJle94iEcGx_wwyZ3utUYZjMEGR-EkDXD8YCvr4ifcX4-TLk3lanOHvJUMKsjZgv8tVWQpbjr5DhxTtnR31r8cDnlKVyIfgIXwEWNVbFm5vN81Y8SSzpMDgahkEmn"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-lg px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider">
+                            CRM-SP 567890
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-1">Dra. Camila Ferreira</h3>
+<p class="text-primary font-semibold text-sm uppercase tracking-wide mb-6">Endocrinologista</p>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">school</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Especialização pela Sociedade Brasileira de Endocrinologia e Metabologia.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline text-lg">workspace_premium</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">Tratamento de diabetes, distúrbios da tireoide e metabolismo ósseo.</p>
+</div>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<button class="w-full py-3 bg-surface-container-high rounded-xl text-primary font-bold text-sm transition-all hover:bg-primary hover:text-white flex items-center justify-center gap-2">
+                                Ver Currículo Completo
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recruitment Card / CTA -->
+<div class="bg-surface-container rounded-2xl p-10 flex flex-col items-center justify-center text-center border-2 border-dashed border-outline-variant/30 group">
+<div class="w-20 h-20 rounded-full bg-secondary-container flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">group_add</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Junte-se à nossa Equipe</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 max-w-xs">
+                        Estamos sempre em busca de talentos que compartilham nossa visão de medicina humanizada.
+                    </p>
+<button class="px-8 py-3 bg-white rounded-xl text-primary font-bold text-sm border border-outline-variant hover:bg-primary hover:text-white transition-all shadow-sm">
+                        Enviar Currículo
+                    </button>
+</div>
+</div>
+</section>
+<!-- Values CTA -->
+<section class="mt-24 px-12 max-w-screen-2xl mx-auto">
+<div class="bg-surface-container-low rounded-[2rem] p-12 md:p-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-headline font-extrabold text-on-surface tracking-tight mb-6">Excelência Clínica em cada detalhe</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Nossa equipe passa por um rigoroso processo de seleção técnica e comportamental. Garantimos que você seja atendido por especialistas que são referência em suas áreas de atuação.
+                    </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<span class="font-semibold text-sm">Atualização Constante</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<span class="font-semibold text-sm">Abordagem Multidisciplinar</span>
+</div>
+</div>
+</div>
+<div class="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="doctors discussing medical cases in a bright modern consultation room with glass walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtU6iLJd5N4II4Yn0LXgaih24x69jMx_TQUsqskWTgnUkjH0M9cbbMjkhOvvezTfw-0qSxRCxuXz1-Iu09G_UcVnA8WWmM3xZWFd20uajR1FMd2lDPj7GchvfeYP7qF8aFhvMHhbWjUMK6lvI59AkbI5rdrxaErLzDOH9p9zu1YylVU05I_MbmxJ8RqwvsEXMdb1mQCkSvIUpF30_wnuc-hy9dm0bQRyiIeD5wKZgxRhqOvLsUxmnQkGee4I6QKABp6XUjn9MRnX6M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto font-['Inter'] text-sm leading-relaxed">
+<div class="md:col-span-1">
+<span class="text-xl font-bold text-sky-900 dark:text-white mb-4 block font-headline">Ethera Health</span>
+<p class="text-slate-500 dark:text-slate-400 mb-6">
+                    Referência em saúde personalizada e tecnologia médica avançada no coração de São Paulo.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-sky-800 dark:text-sky-400 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined text-lg">language</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-sky-800 dark:text-sky-400 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-sky-800 dark:text-sky-500 mb-6 uppercase tracking-widest text-[10px]">Institucional</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Início</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Sobre</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Equipe</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Serviços</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sky-800 dark:text-sky-500 mb-6 uppercase tracking-widest text-[10px]">Suporte</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Blog</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Contato</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">WhatsApp</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline opacity-80 hover:opacity-100 transition-opacity" href="#">Google Maps</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sky-800 dark:text-sky-500 mb-6 uppercase tracking-widest text-[10px]">Localização</h4>
+<p class="text-slate-500 dark:text-slate-400 mb-4">
+                    Av. Paulista, 2000 - Bela Vista<br/>
+                    São Paulo - SP, 01310-200
+                </p>
+<div class="h-32 w-full rounded-xl overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="map view of São Paulo city area with street details" data-location="São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFaMtHQTyXAGAeadpbvhWZccFLo7emHobLExl-Zt7a-MjYsdwjh1QbOkhrZWmH4NJnfrGy1Urq6DC0RBGeuwf188-KF_3wlaJjTlRxxAcPb1xhWHsO2o5B63OfdMow6HTXvqBCsqSCFgnOhKBFgO61ydx8U88XKJGprWxhgiSf_OEWwjf4LhFUOKA3ATXS9Z6jgaf9C8CJFC1NZRCp7PmxyBty3T_cWODS8JC0XXGVbszRloyFbPSoY0RtCXFfxWIWMm8wBVLC4whH"/>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-xs">© 2024 Ethera Health. Clínica em São Paulo.</p>
+</div>
+</footer>
+</body></html>
