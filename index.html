@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ethera Health | Cuidado Excepcional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#a5c8ff",
+                        "primary-fixed-dim": "#a5c8ff",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#677881",
+                        "outline-variant": "#c1c6d4",
+                        "on-primary-fixed-variant": "#004786",
+                        "primary": "#005dac",
+                        "on-primary-container": "#fffdff",
+                        "primary-container": "#1976d2",
+                        "surface-tint": "#005faf",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary": "#4f5f68",
+                        "error": "#ba1a1a",
+                        "outline": "#717783",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#d3e2ed",
+                        "inverse-on-surface": "#eff1f3",
+                        "primary-fixed": "#d4e3ff",
+                        "surface-bright": "#f7f9fb",
+                        "secondary-fixed": "#d6e5ef",
+                        "on-tertiary-container": "#fefeff",
+                        "on-secondary-container": "#56656e",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "error-container": "#ffdad6",
+                        "on-background": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#bac9d3",
+                        "on-tertiary-fixed-variant": "#394951",
+                        "inverse-surface": "#2d3133",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed-dim": "#b8c9d3",
+                        "surface-dim": "#d8dadc",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#0f1d25",
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#001c3a",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3b4951",
+                        "on-surface-variant": "#414752",
+                        "on-tertiary-fixed": "#0d1e25",
+                        "secondary": "#526069",
+                        "surface-container": "#eceef0",
+                        "on-surface": "#191c1e",
+                        "tertiary-fixed": "#d4e5ef"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-sky-800 font-headline">Ethera Health</div>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-sky-700 border-b-2 border-sky-700 pb-1 font-headline font-semibold tracking-tight transition-colors duration-300" href="index.html">Início</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="sobre.html">Sobre</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="equipe.html">Equipe</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="servicos.html">Serviços</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="">Blog</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="contato.html">Contato</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-3 rounded-lg font-headline font-bold scale-102 hover:scale-105 transition-transform duration-300 shadow-lg">
+                Agende sua Consulta
+            </button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden px-6 md:px-12 py-20 lg:py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-container text-on-secondary-container font-label text-sm font-semibold tracking-wide uppercase">
+                        Excelência em Saúde
+                    </span>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tight">
+                        Cuidado Excepcional, <br/><span class="text-primary">Saúde com Propósito</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        A clínica de referência em São Paulo para quem busca excelência e atendimento personalizado em um ambiente acolhedor e tecnológico.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 scale-100 hover:scale-[1.02]">
+                            Agende sua Consulta Online
+                        </button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-highest transition-colors">
+                            Nossas Especialidades
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="relative rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Interior da clínica moderna" class="w-full aspect-[4/5] object-cover" data-alt="bright modern medical clinic lobby with white marble floors comfortable designer chairs and soft natural lighting from large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPI_YqpVR971jBWQLsOnKu0mh3tpkZBCHfLD90yJ3HYbMzDC5HLlGQ-CaKOBlnpNoBqARFw12iJd5YfmlXtXAjEPvSfiuP1WFlw7Ptzn00FCm3AbW3OltqIK3XEd3oOqEcXCdMExwMfqulNoHfXpcgmZwSCFXtcIEE-zGTT-p3NDYD_CjnDf0W6fQQvcIDFLO8YrqOPkHIGcP3GgGqzKHYX8Exro7NCsqsFKqZVV9VxS9EdR3po4yTF4MijkX6OfcHor6fH4SyGh_W"/>
+<div class="absolute bottom-6 left-6 right-6 glass-nav p-6 rounded-2xl flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full bg-slate-300 border-2 border-white"></div>
+<div class="w-10 h-10 rounded-full bg-slate-400 border-2 border-white"></div>
+<div class="w-10 h-10 rounded-full bg-slate-500 border-2 border-white"></div>
+</div>
+<div class="text-sm font-body">
+<span class="font-bold text-primary">+2.500</span> pacientes atendidos este ano
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 bg-surface-container-low px-6 md:px-12">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Especialidades Médicas</h2>
+<p class="font-body text-on-surface-variant max-w-xl text-lg">Oferecemos diagnósticos precisos e tratamentos avançados com foco no seu bem-estar integral.</p>
+</div>
+<a class="font-headline font-bold text-primary flex items-center gap-2 group" href="#">
+                        Ver todos os serviços <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 group">
+<div class="w-14 h-14 bg-primary-container/10 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl" data-icon="cardiology">cardiology</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Cardiologia</h3>
+<p class="font-body text-on-surface-variant mb-6 leading-relaxed">Check-ups completos, monitoramento avançado e prevenção de doenças cardiovasculares.</p>
+<div class="h-1 w-12 bg-primary rounded-full opacity-30 group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 group">
+<div class="w-14 h-14 bg-primary-container/10 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl" data-icon="dermatology">dermatology</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Dermatologia</h3>
+<p class="font-body text-on-surface-variant mb-6 leading-relaxed">Saúde da pele e procedimentos estéticos modernos realizados por especialistas renomados.</p>
+<div class="h-1 w-12 bg-primary rounded-full opacity-30 group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 group">
+<div class="w-14 h-14 bg-primary-container/10 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl" data-icon="female">female</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Ginecologia</h3>
+<p class="font-body text-on-surface-variant mb-6 leading-relaxed">Cuidado integral com a saúde da mulher em todas as fases da vida, com acolhimento e precisão.</p>
+<div class="h-1 w-12 bg-primary rounded-full opacity-30 group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="py-24 bg-surface px-6 md:px-12">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+<div class="w-full lg:w-1/2 grid grid-cols-2 gap-4 h-[600px]">
+<div class="rounded-3xl overflow-hidden shadow-lg h-full">
+<img alt="Modern and luxurious medical clinic interior" class="w-full h-full object-cover" data-alt="high-quality professional photograph of a premium modern medical clinic interior with soft natural lighting, designer furniture, and advanced medical technology, creating a clinical sanctuary atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsbWt1Z08lTOVt909y4vSB0aA4aiFmugS-dwmlh_NSC-cx8ombNP_GF3Ld3CmlyTZwMM7tfBb0a5tfJRQazX4j6yqhtVju6RUAMWhnmteEEBI0_r9kjk_zEFVbCvNHzbq9h1ISDXwd9k5vN4548FiZhP8UZO2b-1lEyyB3d3ng1C7DR6D4PEfBGftGnfavrFI6dwI8BFR2X9lMVogGzozuhwB7udgfpnQkHe_O7v9ozdErlYXt5cnuJSr9Jbh3GFLfOxaWohSzpG7a"/>
+</div>
+<div class="grid grid-rows-2 gap-4 h-full">
+<div class="rounded-3xl overflow-hidden shadow-lg">
+<img alt="Médico especialista em ambiente clínico" class="w-full h-full object-cover" data-alt="high-quality professional photograph of a confident real doctor in a clean, well-lit modern clinical sanctuary setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4i_TBmlSc2TT1AwTkJtRqcdKiKS4xy7rYQXl97N9Y5WdRgKmi9ESilAFwfVgcZ9Ml1Lx6DGVwlodI4qQ5O2d3SC42KqMClUBh60a_iNozlbGid5zDKa4ouVYO2aWoB6ww7YmknoRPp8SYucke3ivLWt03Sz6ABbnxGRRZ95JI_ENLg0eOE8dUpB6bX1yIWxPuQQROrpda3_u4PN21PP1u28-edMIWcgzyiLAG_Jois-Jj6F0UNnMbLCGMmx02w6kwfa-ghUVmX7VY"/>
+</div>
+<div class="bg-primary-container text-on-primary-container p-8 rounded-3xl flex flex-col justify-center">
+<h4 class="font-headline text-4xl font-bold mb-2">15+</h4>
+<p class="font-label font-semibold text-sm uppercase tracking-wider opacity-80">Anos de Experiência</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<h2 class="font-headline text-4xl lg:text-5xl font-bold text-on-surface mb-8 leading-tight">Por que confiar na <br/>Ethera Health?</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="apartment">apartment</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Infraestrutura Premium</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">Ambientes planejados para oferecer conforto absoluto e tecnologia de ponta em diagnósticos.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Equipe Multidisciplinar</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">Médicos especialistas com formação nas melhores instituições do país e foco em medicina baseada em evidências.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="patient_list">patient_list</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Foco no Paciente</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">Atendimento humanizado, sem pressa, respeitando o tempo e a individualidade de cada pessoa.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container px-6 md:px-12 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Experiências de Nossos Pacientes</h2>
+<p class="font-body text-on-surface-variant max-w-2xl mx-auto">A confiança de quem já viveu o cuidado Ethera Health é o nosso maior selo de qualidade.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-[2.5rem] relative">
+<div class="absolute -top-4 -right-4 bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="format_quote">format_quote</span>
+</div>
+<div class="flex gap-1 text-primary-container mb-6">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body text-lg italic text-on-surface mb-8">"Um atendimento diferenciado desde a recepção. A dra. foi extremamente atenciosa e explicou tudo com muita clareza. Me senti muito seguro."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<p class="font-headline font-bold">Ricardo S.</p>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Paciente há 2 anos</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-[2.5rem] relative">
+<div class="absolute -top-4 -right-4 bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="format_quote">format_quote</span>
+</div>
+<div class="flex gap-1 text-primary-container mb-6">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body text-lg italic text-on-surface mb-8">"A clínica é lindíssima e os equipamentos são muito modernos. O cuidado humanizado faz toda a diferença em momentos delicados."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<p class="font-headline font-bold">Mariana L.</p>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Paciente Dermatologia</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-[2.5rem] relative">
+<div class="absolute -top-4 -right-4 bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="format_quote">format_quote</span>
+</div>
+<div class="flex gap-1 text-primary-container mb-6">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body text-lg italic text-on-surface mb-8">"O agendamento online é prático e eficiente. Cheguei e fui atendido exatamente no horário. Recomendo para quem valoriza tempo."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<p class="font-headline font-bold">Eduardo F.</p>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Novo Paciente</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="bg-primary-container rounded-[3rem] p-12 lg:p-20 relative overflow-hidden text-center text-on-primary-container">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary to-primary-container opacity-50"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl lg:text-6xl font-bold mb-8">Pronto para priorizar sua saúde?</h2>
+<p class="font-body text-xl opacity-90 mb-12">Agende hoje mesmo uma consulta com nossos especialistas e descubra o padrão Ethera de excelência médica.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-2xl font-headline font-bold text-xl shadow-2xl transition-transform hover:scale-105 active:scale-95">
+                            Agendar Minha Consulta Agora
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto font-['Inter'] text-sm leading-relaxed">
+<div>
+<span class="text-xl font-bold text-sky-900 mb-4 block">Ethera Health</span>
+<p class="text-slate-500 mb-6 leading-relaxed">Excelência médica e cuidado humanizado no coração de São Paulo. Nossa missão é promover a saúde através da prevenção e tratamentos inovadores.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-sky-800" data-icon="language">language</span>
+<span class="material-symbols-outlined text-sky-800" data-icon="call">call</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-sky-900 mb-6 uppercase tracking-wider text-xs">Links Rápidos</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Início</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Sobre</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Equipe</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Serviços</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sky-900 mb-6 uppercase tracking-wider text-xs">Atendimento</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Blog</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Contato</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">WhatsApp</a></li>
+<li><a class="text-slate-500 hover:text-sky-600 transition-opacity underline-offset-4 hover:underline" href="#">Google Maps</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sky-900 mb-6 uppercase tracking-wider text-xs">Localização</h4>
+<p class="text-slate-500 mb-4">Av. Brigadeiro Faria Lima, 1200<br/>Pinheiros, São Paulo - SP</p>
+<div class="rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Mapa da localização" class="w-full h-32 object-cover" data-alt="minimalist aesthetic map showing pin location in modern urban district" data-location="Sao Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbTkrkpUfQvHYNqy06UZf99vuMVIf6Jl0mIgp5ExHxt8Gk1qhlJoIwFS43LfUYysKuTUs9Jrd5YZtpSu0dQf317P__C7xMaXZMHPxVxlO8g_FToieDzGg5WZYiTr5xurnItd1bBYKXaeSEGc3VVurVjFsRndCt8Z5EGVQxbi1LSLy_kemNhWZBndo-2XZiHQ9_e5m22ZaP2Rv6GI3LyX-IqXIIb7BmPlyUlZeeLkSjpY-hvMrzHmXNJTrPe-R26igW_PkG7Zeg1nCx"/>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 mt-20 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500">© 2024 Ethera Health. Clínica em São Paulo.</p>
+<div class="flex gap-8">
+<a class="text-slate-400 hover:text-sky-600" href="#">Termos de Uso</a>
+<a class="text-slate-400 hover:text-sky-600" href="#">Privacidade</a>
+</div>
+</div>
+</footer>
+</body></html>
