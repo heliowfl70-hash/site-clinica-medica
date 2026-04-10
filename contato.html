@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato | Ethera Health</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#a5c8ff",
+              "primary-fixed-dim": "#a5c8ff",
+              "surface-container-low": "#f2f4f6",
+              "tertiary-container": "#677881",
+              "outline-variant": "#c1c6d4",
+              "on-primary-fixed-variant": "#004786",
+              "primary": "#005dac",
+              "on-primary-container": "#fffdff",
+              "primary-container": "#1976d2",
+              "surface-tint": "#005faf",
+              "surface-container-high": "#e6e8ea",
+              "tertiary": "#4f5f68",
+              "error": "#ba1a1a",
+              "outline": "#717783",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "secondary-container": "#d3e2ed",
+              "inverse-on-surface": "#eff1f3",
+              "primary-fixed": "#d4e3ff",
+              "surface-bright": "#f7f9fb",
+              "secondary-fixed": "#d6e5ef",
+              "on-tertiary-container": "#fefeff",
+              "on-secondary-container": "#56656e",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e0e3e5",
+              "error-container": "#ffdad6",
+              "on-background": "#191c1e",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#bac9d3",
+              "on-tertiary-fixed-variant": "#394951",
+              "inverse-surface": "#2d3133",
+              "background": "#f7f9fb",
+              "tertiary-fixed-dim": "#b8c9d3",
+              "surface-dim": "#d8dadc",
+              "surface-variant": "#e0e3e5",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed": "#0f1d25",
+              "surface": "#f7f9fb",
+              "on-primary-fixed": "#001c3a",
+              "on-error": "#ffffff",
+              "on-secondary-fixed-variant": "#3b4951",
+              "on-surface-variant": "#414752",
+              "on-tertiary-fixed": "#0d1e25",
+              "secondary": "#526069",
+              "surface-container": "#eceef0",
+              "on-surface": "#191c1e",
+              "tertiary-fixed": "#d4e5ef"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none bg-gradient-to-b from-slate-100/50 to-transparent">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-bold tracking-tighter text-sky-800 dark:text-white font-headline" href="#">Ethera Health</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sky-700 border-b-2 border-sky-700 pb-1 font-headline font-semibold tracking-tight transition-colors duration-300" href="index.html">Início</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="sobre.html">Sobre</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="equipe.html">Equipe</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="servicos.html">Serviços</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="">Blog</a>
+<a class="text-slate-600 font-headline font-semibold tracking-tight hover:text-sky-600 transition-colors duration-300" href="contato.html">Contato</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-lg font-headline font-semibold scale-102 transition-transform duration-300 shadow-md">
+                Agende sua Consulta
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<!-- Hero Header -->
+<header class="mb-16">
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-on-surface mb-4">Entre em Contato</h1>
+<p class="text-on-surface-variant text-xl max-w-2xl leading-relaxed">
+                Estamos prontos para oferecer um atendimento humanizado e preciso. Agende sua visita à nossa clínica em São Paulo.
+            </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Quick Contact & Info -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- SEO Address Card -->
+<section class="bg-surface-container-low p-8 rounded-xl">
+<h2 class="font-headline text-2xl font-bold mb-6 text-primary">Ethera Health</h2>
+<p class="text-on-surface-variant mb-4 leading-relaxed">
+                        Clínica em Jardins, São Paulo.<br/>
+                        Av. Paulista, 1000 - 12º Andar<br/>
+                        São Paulo - SP, 01310-100
+                    </p>
+<div class="flex flex-col gap-4 mt-8">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Telefone</p>
+<a class="text-2xl font-bold text-on-surface hover:text-primary transition-colors" href="tel:+5511999999999">(11) 99999-9999</a>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">WhatsApp</p>
+<a class="text-xl font-bold text-green-700 hover:text-green-800 transition-colors" href="#">Conversar com Atendente</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Opening Hours -->
+<section class="bg-surface-container-high p-8 rounded-xl">
+<h3 class="font-headline text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">schedule</span>
+                        Horário de Atendimento
+                    </h3>
+<div class="space-y-3">
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Segunda a Sexta</span>
+<span class="font-semibold">08:00 — 20:00</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Sábados</span>
+<span class="font-semibold">09:00 — 14:00</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="text-on-surface-variant">Domingos e Feriados</span>
+<span class="text-error font-medium italic text-sm">Fechado</span>
+</div>
+</div>
+</section>
+<!-- Map Representation -->
+<section class="h-80 w-full rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern minimalist city map showing street grid with soft blue markers in a clean professional aesthetic" data-location="São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcjL2m53Zctkdl_EILwiIqvcL16IvybpR9WMG-JZxX6opYxemOBBgbzCtUOIEDmGz83fPKt2ph_gxtwJM-vA9OkHSLCIex5ill1YhmnAnocCU4i6BIp-ISmZNAPClnVuUkrJxcgaYGzT-ekieXU98MAHDpcTw42I9q0FY8SFZR5_4mNZyvHFoWXw4Zv8OHNG45oLWYnrWpAOTsXA0tkcmrKZjOXr24Y1nOt97FfkV009OtK8vmQJvF0SmNPOEXfHpJ4T-rYUcB3AQ7"/>
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<a class="bg-white/90 glass-effect px-6 py-3 rounded-full flex items-center gap-2 text-primary font-bold shadow-lg hover:scale-105 transition-transform" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                            Ver no Google Maps
+                        </a>
+</div>
+</section>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/5">
+<h3 class="font-headline text-2xl font-bold mb-8">Envie sua Mensagem</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant px-1">Nome Completo</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="Seu nome" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant px-1">E-mail</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="seu@email.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant px-1">Telefone / WhatsApp</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="(11) 00000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant px-1">Especialidade Desejada</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all appearance-none">
+<option>Selecione uma especialidade</option>
+<option>Clínico Geral</option>
+<option>Cardiologia</option>
+<option>Dermatologia</option>
+<option>Ginecologia</option>
+<option>Psicologia</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface-variant px-1">Sua Mensagem</label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all resize-none" placeholder="Como podemos ajudar você hoje?" rows="5"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-headline font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform flex items-center justify-center gap-2" type="submit">
+                                Enviar Mensagem
+                                <span class="material-symbols-outlined">send</span>
+</button>
+<p class="mt-4 text-xs text-on-surface-variant opacity-60">
+                                Ao enviar, você concorda com nossa política de privacidade e tratamento de dados.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto font-['Inter'] text-sm leading-relaxed">
+<div class="md:col-span-1">
+<span class="text-xl font-bold text-sky-900 dark:text-white mb-4 block font-headline">Ethera Health</span>
+<p class="text-slate-500 dark:text-slate-400 opacity-80 mb-6">
+                    Excelência em saúde com foco no bem-estar integral e tecnologia de ponta para sua vida.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-sky-800 dark:text-sky-500 mb-6 uppercase tracking-widest text-xs">Menu</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">Início</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">Sobre</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">Equipe</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">Serviços</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sky-800 dark:text-sky-500 mb-6 uppercase tracking-widest text-xs">Suporte</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">Blog</a></li>
+<li><a class="font-bold text-sky-700 underline-offset-4 hover:underline transition-opacity" href="#">Contato</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">WhatsApp</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 underline-offset-4 hover:underline transition-opacity" href="#">Google Maps</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sky-800 dark:text-sky-500 mb-6 uppercase tracking-widest text-xs">Novidades</h4>
+<p class="text-slate-500 dark:text-slate-400 mb-4">Inscreva-se para receber dicas de saúde.</p>
+<div class="flex gap-2">
+<input class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg px-3 py-2 text-xs flex-1" placeholder="E-mail" type="text"/>
+<button class="bg-primary text-on-primary px-3 py-2 rounded-lg text-xs font-bold">OK</button>
+</div>
+</div>
+</div>
+<div class="mt-20 border-t border-slate-200 dark:border-slate-800 pt-10 text-center px-12 max-w-screen-2xl mx-auto">
+<p class="text-slate-500 dark:text-slate-400 text-xs">© 2024 Ethera Health. Clínica em São Paulo.</p>
+</div>
+</footer>
+</body></html>
